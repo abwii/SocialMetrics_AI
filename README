@@ -1,18 +1,145 @@
-# Contexte
+# SocialMetrics AI — Sentiment Analysis API
 
-Vous travaillez pour une entreprise fictive, SocialMetrics AI, spécialisée dans l’analyse de données pour les réseaux
-sociaux. Le client, Daunale Treupe, souhaite surveiller les opinions exprimées sur X (anciennement Twitter). Votre
-mission est de concevoir un service permettant d'évaluer le sentiment des tweets en fonction de leur contenu.
+## 📌 Contexte
 
-# Objectifs
+SocialMetrics AI est une entreprise fictive spécialisée dans l’analyse de données issues des réseaux sociaux.
 
-- Développer une API avec Flask.
-- Implémenter un modèle de machine learning basé sur la régression logistique.
-- Réentraîner régulièrement le modèle avec des données annotées.
-- Générer et analyser des matrices de confusion pour évaluer les performances.
+Le client, **Daunale Treupe**, souhaite surveiller les opinions exprimées sur X (anciennement Twitter).
 
-# Auteurs 
+L’objectif du projet est de concevoir un service capable d’analyser automatiquement le sentiment des tweets à partir de leur contenu.
+
+---
+
+## 🎯 Objectifs du projet
+
+- Développer une API REST avec Flask permettant l’analyse de sentiments
+- Implémenter un modèle de machine learning basé sur la régression logistique
+- Utiliser une base de données MySQL pour stocker des tweets annotés
+- Mettre en place un pipeline de traitement des données textuelles
+- Générer et analyser des métriques de performance du modèle (matrice de confusion, précision, rappel, F1-score)
+- Prévoir un mécanisme de réentraînement du modèle avec de nouvelles données
+
+---
+
+## ⚙️ Technologies utilisées
+
+- Python 3
+- Flask
+- Scikit-learn
+- Pandas / NumPy
+- MySQL / MariaDB
+- TF-IDF Vectorizer
+
+---
+
+## 🧠 Architecture du projet
+
+```text
+SocialMetrics_AI/
+│
+├── app.py
+├── db/
+│   ├── database.py
+│   ├── INIT_DATABASE.py
+│   ├── init_data.py
+│
+├── model/
+│   ├── train.py
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+├── utils/
+│   ├── preprocess.py
+│   └── __init__.py
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+### 1. Cloner le projet
+git clone <repo-url>
+cd SocialMetrics_AI
+
+### 2. Installer les dépendances
+pip install -r requirements.txt
+
+---
+
+## 🗄️ Initialisation de la base de données
+
+### 1. Créer la base et la table
+python db/INIT_DATABASE.py
+
+### 2. Insérer les données d'entraînement
+python db/init_data.py
+
+---
+
+## 🤖 Entraînement du modèle
+
+python model/train.py
+
+Cela génère :
+- model/model.pkl
+- model/vectorizer.pkl
+
+---
+
+## 🌐 Lancer l’API
+
+python app.py
+
+L’API sera disponible sur :
+http://127.0.0.1:5000
+
+---
+
+## 📡 Endpoint API
+
+### POST /predict
+
+#### Exemple de requête :
+{
+  "tweets": [
+    "I love this product",
+    "This is terrible"
+  ]
+}
+
+#### Exemple de réponse :
+{
+  "I love this product": 1,
+  "This is terrible": -1
+}
+
+---
+
+## 📊 Modèle de Machine Learning
+
+- Logistic Regression
+- TF-IDF Vectorizer
+- 1 = positif
+- -1 = négatif
+
+---
+
+## 🔄 Améliorations possibles
+
+- Ajout d’une classe neutre
+- Modèles avancés (Word2Vec / BERT)
+- Réentraînement automatique
+- Dataset enrichi
+
+---
+
+## 👥 Auteurs
 - Wassim BACHA
 - Jimmy LETTE-VOUETO
 - Christian MICELA
 - Timothé PEYREGNE
+
+Projet réalisé en groupe dans le cadre d’un TP de Machine Learning & API
