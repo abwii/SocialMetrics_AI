@@ -1,0 +1,18 @@
+# Contexte
+
+Vous travaillez pour une entreprise fictive, SocialMetrics AI, spécialisée dans l’analyse de données pour les réseaux
+sociaux. Le client, Daunale Treupe, souhaite surveiller les opinions exprimées sur X (anciennement Twitter). Votre
+mission est de concevoir un service permettant d'évaluer le sentiment des tweets en fonction de leur contenu.
+
+# Objectifs
+
+- Développer une API avec Flask.
+- Implémenter un modèle de machine learning basé sur la régression logistique.
+- Réentraîner régulièrement le modèle avec des données annotées.
+- Générer et analyser des matrices de confusion pour évaluer les performances.
+
+# Auteurs 
+- Wassim BACHA
+- Jimmy LETTE-VOUETO
+- Christian MICELA
+- Timothé PEYREGNE
