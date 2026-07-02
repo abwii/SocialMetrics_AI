@@ -26,7 +26,8 @@ L’objectif du projet est de concevoir un service capable d’analyser automati
 - Python 3
 - Flask
 - Scikit-learn
-- Pandas / NumPy
+- Pandas
+- NumPy
 - MySQL / MariaDB
 - TF-IDF Vectorizer
 
@@ -38,105 +39,135 @@ L’objectif du projet est de concevoir un service capable d’analyser automati
 SocialMetrics_AI/
 │
 ├── app.py
+├── .gitignore
+├── README.md
+│
 ├── db/
 │   ├── database.py
 │   ├── INIT_DATABASE.py
-│   ├── init_data.py
+│   └── init_data.py
 │
 ├── model/
-│   ├── train.py
-│   ├── model.pkl
-│   └── vectorizer.pkl
+│   └── train.py
 │
-├── utils/
-│   ├── preprocess.py
-│   └── __init__.py
-│
-├── .gitignore
-└── README.md
+└── utils/
+    └── preprocess.py
 ```
+
+> **Note :** Les fichiers `model.pkl` et `vectorizer.pkl` sont générés automatiquement lors de l'entraînement du modèle et ne sont pas versionnés.
 
 ---
 
 ## 🚀 Installation
 
 ### 1. Cloner le projet
+
+```bash
 git clone <repo-url>
 cd SocialMetrics_AI
+```
 
 ### 2. Installer les dépendances
+
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
 ## 🗄️ Initialisation de la base de données
 
-### 1. Créer la base et la table
+### 1. Créer la base de données et la table
+
+```bash
 python db/INIT_DATABASE.py
+```
 
 ### 2. Insérer les données d'entraînement
+
+```bash
 python db/init_data.py
+```
 
 ---
 
 ## 🤖 Entraînement du modèle
 
+```bash
 python model/train.py
+```
 
-Cela génère :
-- model/model.pkl
-- model/vectorizer.pkl
+Cette commande génère automatiquement les fichiers :
+
+- `model/model.pkl`
+- `model/vectorizer.pkl`
 
 ---
 
-## 🌐 Lancer l’API
+## 🌐 Lancer l'API
 
+```bash
 python app.py
+```
 
-L’API sera disponible sur :
+L'API sera disponible à l'adresse :
+
+```text
 http://127.0.0.1:5000
+```
 
 ---
 
 ## 📡 Endpoint API
 
-### POST /predict
+### `POST /predict`
 
-#### Exemple de requête :
+Analyse une liste de tweets et retourne un score de sentiment.
+
+#### Exemple de requête
+
+```json
 {
   "tweets": [
     "I love this product",
     "This is terrible"
   ]
 }
+```
 
-#### Exemple de réponse :
+#### Exemple de réponse
+
+```json
 {
   "I love this product": 1,
   "This is terrible": -1
 }
+```
 
 ---
 
 ## 📊 Modèle de Machine Learning
 
-- Logistic Regression
-- TF-IDF Vectorizer
-- 1 = positif
-- -1 = négatif
+- **Algorithme :** Logistic Regression
+- **Vectorisation :** TF-IDF
+- **Sortie :**
+  - `1` → sentiment positif
+  - `-1` → sentiment négatif
 
 ---
 
 ## 🔄 Améliorations possibles
 
-- Ajout d’une classe neutre
-- Modèles avancés (Word2Vec / BERT)
-- Réentraînement automatique
-- Dataset enrichi
+- Ajout d'une classe **neutre**
+- Réentraînement automatique via une tâche planifiée (cron)
+- Utilisation de modèles plus avancés (Word2Vec, BERT, etc.)
+- Enrichissement du dataset d'entraînement
+- Évaluation détaillée avec matrices de confusion et métriques (précision, rappel, F1-score)
 
 ---
 
 ## 👥 Auteurs
+
 - Wassim BACHA
 - Jimmy LETTE-VOUETO
 - Christian MICELA
