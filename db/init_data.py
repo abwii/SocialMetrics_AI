@@ -1,4 +1,9 @@
-from database import get_connection
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from db.database import get_connection
 
 def seed_data():
     conn = get_connection()
