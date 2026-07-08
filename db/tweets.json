@@ -1,0 +1,397 @@
+[
+  {
+    "text": "I love this product so much",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "This is amazing, exactly what I needed",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I am very happy with my purchase",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Absolutely fantastic experience",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Best decision I have ever made",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The service was excellent and fast",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I feel great today, everything is perfect",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Such a wonderful surprise, thank you",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "This exceeded all my expectations",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Highly recommend it to everyone",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The quality is outstanding",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I am so grateful for this",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "What a beautiful and sunny day",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "This made me smile all day",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Incredible work, truly impressive",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I could not be happier right now",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "A brilliant idea and a great result",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Everything went smoothly and perfectly",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The team did a wonderful job",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I appreciate the effort, it was superb",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "This is the best coffee I have ever had",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "My new phone works flawlessly",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The concert last night was unforgettable",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Customer support solved my issue instantly",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I am thrilled with the new update",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Delicious food and friendly staff",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "This book changed my life for the better",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The trip was relaxing and fun",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I passed my exam, I am so proud",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Great value for the money, love it",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The movie was inspiring and moving",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "My garden is blooming beautifully this spring",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Fast delivery and perfect packaging",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I finally got the promotion I wanted",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "This app is intuitive and helpful",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Warm and welcoming atmosphere everywhere",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The hotel room was clean and cozy",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "I enjoyed every single moment of it",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "A truly delightful and pleasant evening",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "The results are better than I hoped",
+    "positive": 1,
+    "negative": 0
+  },
+  {
+    "text": "Worst experience ever, never again",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I hate this so much",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "This is terrible and useless",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Very disappointing, do not buy it",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The service was slow and rude",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I am so frustrated with this product",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Complete waste of my money",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "This broke after only one day",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Awful quality, I want a refund",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The worst customer support I have seen",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I regret buying this",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Nothing works as advertised",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Such a horrible and stressful day",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "This made me really angry",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Terrible food and dirty tables",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I am extremely unhappy with the result",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The app keeps crashing constantly",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "A total disaster from start to finish",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "My package arrived broken and late",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "This is the most annoying thing ever",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The room was cold and filthy",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I feel cheated and disappointed",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The movie was boring and too long",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Rude staff and overpriced menu",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "My flight was delayed for hours again",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "This update ruined everything",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I cannot believe how bad this is",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The battery dies within an hour",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Painfully slow and full of bugs",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I lost all my data because of this",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The instructions make no sense at all",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "A miserable and exhausting experience",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The product looks nothing like the photos",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I am tired of these constant errors",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "This company does not care about customers",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "The noise kept me awake all night",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Everything about this is a letdown",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "I would give zero stars if I could",
+    "positive": 0,
+    "negative": 1
+  },
+  {
+    "text": "Poorly made and falling apart already",
+    "positive": 0,
+    "negative": 1
+  }
+]

@@ -1,36 +1,39 @@
 import sys
 import os
-
+import json
+ 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
+ 
 from db.database import get_connection
 
+def load_tweets():
+    """Charge les tweets annotes depuis le fichier JSON."""
+    path = os.path.join(os.path.dirname(__file__), "tweets.json")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+ 
+ 
 def seed_data():
+    tweets = load_tweets()
+ 
     conn = get_connection()
     cursor = conn.cursor()
-
-    data = [
-        ("I love this product", 1, 0),
-        ("This is amazing", 1, 0),
-        ("I am very happy", 1, 0),
-        ("Worst experience ever", 0, 1),
-        ("I hate this so much", 0, 1),
-        ("This is terrible", 0, 1),
-        ("Not bad at all", 1, 0),
-        ("I feel great today", 1, 0),
-        ("This is disappointing", 0, 1),
-        ("Absolutely fantastic", 1, 0),
-    ]
-
+ 
+    # on vide la table pour eviter les doublons a chaque execution
+    cursor.execute("DELETE FROM tweets")
+ 
+    data = [(t["text"], t["positive"], t["negative"]) for t in tweets]
+ 
     cursor.executemany(
         "INSERT INTO tweets (text, positive, negative) VALUES (%s, %s, %s)",
         data
     )
-
+ 
     conn.commit()
     conn.close()
+ 
+    print(f"{len(data)} tweets inserted!")
 
-    print("Data inserted!")
 
 if __name__ == "__main__":
     seed_data()
