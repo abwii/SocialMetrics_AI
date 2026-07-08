@@ -31,7 +31,7 @@ def train():
     vectorizer = TfidfVectorizer(max_features=5000)
     X_vec = vectorizer.fit_transform(X)
 
-    model = LogisticRegression(max_iter=200)
+    model = LogisticRegression(max_iter=1000, class_weight="balanced")
     model.fit(X_vec, y)
 
     pickle.dump(model, open("model/model.pkl", "wb"))
