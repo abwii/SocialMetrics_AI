@@ -4,3 +4,4 @@ model/*.pkl
 *.pkl
 .env
 reports/*
+.pytest_cache/
