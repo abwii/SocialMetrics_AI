@@ -50,8 +50,12 @@ SocialMetrics_AI/
 ├── model/
 │   └── train.py
 │
-└── utils/
-    └── preprocess.py
+├── utils/
+│   └── preprocess.py
+│
+└── tests/
+    ├── test_app.py
+    └── test_preprocess.py
 ```
 
 > **Note :** Les fichiers `model.pkl` et `vectorizer.pkl` sont générés automatiquement lors de l'entraînement du modèle et ne sont pas versionnés.
@@ -153,6 +157,36 @@ Analyse une liste de tweets et retourne un score de sentiment.
 - **Sortie :**
   - `1` → sentiment positif
   - `-1` → sentiment négatif
+
+---
+
+## ✅ Tests
+
+Le projet contient des tests unitaires (`pytest`) couvrant :
+
+- L'endpoint `POST /predict` : cas nominal (tweets valides, un ou plusieurs) et cas d'erreur (JSON invalide, champ `tweets` manquant, `tweets` vide/mal typé, tweet vide).
+- Le pipeline de preprocessing (`utils/preprocess.py`) : mise en minuscule, suppression des URLs, de la ponctuation/chiffres, normalisation des espaces.
+
+### Lancer les tests
+
+Depuis la racine du projet :
+
+```bash
+pytest
+```
+
+Pour un rapport plus détaillé :
+
+```bash
+pytest -v
+```
+
+Pour lancer uniquement un fichier de test précis :
+
+```bash
+pytest tests/test_app.py
+pytest tests/test_preprocess.py
+```
 
 ---
 
